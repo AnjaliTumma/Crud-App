@@ -1,0 +1,67 @@
+.loginbox{
+    width: 30%;
+    height: 400px;
+    margin: 5rem auto;
+    background-color: white;
+    box-shadow: 0px 0px 8px black;
+}
+.loginbox .logtitle{
+    width: 100%;
+    height: 100px;
+    background-color: lightseagreen;
+}
+.loginbox .logtitle h1{
+    font-size:45px;
+   text-align: center;
+   color: white;
+   padding-top: 1rem;
+   letter-spacing: 2px;
+   text-shadow: 0px 0px 2px black;
+   text-transform: uppercase;
+}
+.loginbox .inputfiled{
+    width: 100%;
+    height: 100px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: blue; */
+}
+.inputfiled label{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 1rem;
+    font-weight: 599;
+    letter-spacing: 1px;
+}
+.inputfiled span{
+    font-size: 25px;
+    font-weight: 599;
+    color: red;
+}
+.inputfiled input{
+    width: 90%;
+    height: 40px;
+    font-size: 17px;
+    border: 2px solid black;
+    outline: none;
+    margin:0.5rem 1rem;
+    transition: all ease-in 0.4s;
+}
+.inputfiled input:focus{
+    border: 2px solid lightseagreen;
+}
+.loginbox input[type='submit']{
+    width: 40%;
+    height: 50px;
+    margin:0.5rem 8rem;
+    border: none;
+    font-weight: 499;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    background-color: lightseagreen;
+}

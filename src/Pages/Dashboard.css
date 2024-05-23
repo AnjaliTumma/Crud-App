@@ -1,0 +1,468 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+  }
+  .back{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .header {
+    width: 100wh;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:crimson;
+    padding: 5px 5%;
+    color: white;
+  }
+  
+  .header button {
+    padding: 15px;
+    background: blue;
+    border: none;
+    color: whitesmoke;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 80px;
+    font-size: 16px;
+    font-weight: 550;
+    width: 150px;
+  }
+  
+  .box {
+   margin: 70px auto;
+    width:400px;
+    height: 420px;
+    border-radius: 4px;
+    border: 2px solid black;
+    z-index: 10;
+    background: white;
+    
+    
+  }
+  .box .title{
+    width: 100%;
+    height: 60px;
+    background:crimson;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box .title h2{
+    padding: 0px 12px;
+  }
+  .box .title label{
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 0px 12px;
+   
+  }
+  .box form{
+    width:100%;
+    padding:10px 25px;
+  }
+  .box form .input-field{
+    width: 100%;
+  
+  }
+  .box form .input-field label{
+    font-weight: 600;
+    width: 100%;
+    font-size: 20px;
+    
+    
+  }
+  .box form .input-field label span{
+    color: red;
+  }
+  .box form .input-field input{
+    width: 83%;
+    height: 38px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+  }
+  .box form .input-field select{
+    width: 84%;
+    height: 40px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 8px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+  
+  }
+  .box form input[type='submit']{
+    width: 50%;
+    margin-top: 15px;
+    padding: 15px;
+    background:crimson;
+    cursor: pointer;
+    border-radius: 4px;
+    border: None;
+    outline: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left:5rem;
+    font-weight: 600;
+    font-size: 20px;
+  
+  }
+  .box form input[type='submit']:hover{
+    background:rgba(220, 20, 60, 0.911);
+    color: white;
+  }
+  table{
+    width: 65%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-left: 300px;
+    margin-top: 110px;
+   
+  }
+  table thead{
+    width: 100%;
+    background: crimson;
+    border-bottom: 1px solid black;
+  
+  }
+  table thead th{
+    padding: 8px 0px;
+  }
+  table tbody {
+    width: 100%;
+  
+  }
+  table tbody tr{
+    border:  2px solid black;
+  }
+  table tbody tr td{
+    padding: 6px;
+    text-align: center;
+  }
+  table tbody tr .actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  table tbody tr .actions button{
+    width: 75px;
+    height: 28px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1.6px solid black;
+    font-weight: 600;
+  }
+  table tbody tr .actions button:nth-child(1){
+    background:rgb(8, 240, 240) ;
+    
+  }
+  table tbody tr .actions button:nth-child(2){
+    background:black ;
+    color: white;
+    
+  } */
+  .App{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color:whitesmoke;
+  }
+  .App .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: crimson;
+    /* border: 1px solid white; */
+  }
+  .App .header .logo{
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .App .header .navs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px 20px;
+  }
+  
+  .App .header .navs a:hover{
+    border-bottom: 2px solid #f18424;
+    color: #f18424;
+  }
+  .App .header .navs button{
+    padding: 8px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+    color: #0b3186;
+    border: 0;
+    outline: 0;
+    transition: all ease-in 0.3s;
+    border-radius: 4px;
+    margin-right: 7rem;
+    border: 2px solid #0b3186;
+  }
+  .App .header .navs button:hover{
+    background-color: #0b3186;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  /* INSERT Form */
+  .insertForm{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 91vh;
+    top: 63px;
+    
+    /* border: 3px dotted red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .insertForm .box{
+    width: 38%;
+    height: 520px;
+    border: 2px solid black;
+    background-color: white;
+  }
+  .insertForm .box2{
+    width: 35%;
+    height: 450px;
+    background-color: white;
+  }
+  .insertForm .box2 img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  .insertForm .box .title{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 10px 20px; 
+    
+  }
+  .insertForm .box .title h3,
+    .insertForm .box .title label{  
+      font-weight: 800;
+      cursor: pointer;
+      font-size: 22px;
+  }
+  .insertForm form{
+    padding: 10px 20px;
+  }
+  .insertForm form .input-fields{
+    width: 100%;
+    display: block;
+  }
+  .insertForm form .input-fields input,
+    .insertForm form .input-fields select{
+    width: 98%;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+    border: 1px solid crimson;
+    margin-bottom: 8px;
+    color: black;
+    border-radius: 5px;
+  }
+  .insertForm form .input-fields label{
+    color: black;
+    font-weight: 600;
+  }
+  .insertForm form .input-fields button{
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+    font-weight: 700;
+  }
+ 
+  
+  /* //Show data */
+  
+  .showData{
+    position: absolute;
+    width: 100%;
+    height: 91vh;
+    top: 63px;
+    
+    display: flex;
+  }
+  .showData .rohitImg{
+    width: 20%;
+    height: 80%;
+    position: fixed;
+    margin-top: 2%;
+    left: 0%;
+    /* background-color: #f18424; */
+  }
+  .showData .dhoniImg{
+    width: 20%;
+    height: 65%;
+    position: fixed;
+    margin-top: 5%;
+    right: 0%;
+    /* background-color: #f18424; */
+  }
+  .rohitImg img,
+  .dhoniImg img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(1px 1px 5px #f47c14);
+  }
+  .showData .tableData{
+    margin-left: 20%;
+    background-color: white;
+    width: 60%;
+    margin-top: 2%;
+    height: 80%;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  
+  .showData .tableData .info{
+    color:black;
+   
+  }
+  .info h3{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .info h1{
+    margin-top: -10px;
+    font-size: 4rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .info span{
+    color: #f77606;
+  }
+  .info h2{
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  /*  */
+  
+  
+  .tableData table{
+    width: 100%;
+    margin-top: 2%;
+    border-collapse: collapse;
+    /* background-color: yellow; */
+  }
+  .tableData table thead{
+    width: 100%;
+  }
+  .tableData  table thead th{
+    padding: 12px;
+    background: crimson;
+    color: white;
+    font-size: 15px;
+    font-weight: 599;
+    text-transform: capitalize;
+  }
+  .tableData table tbody{
+    width: 100%;
+  }
+  .tableData table tbody tr{
+    border-bottom: 1px solid rgba(220, 20, 60, 0.822);
+    width: 100%;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #0b3186;
+  }
+  
+  
+  .tableData table tbody tr:nth-child(even){
+    /* background: #6AA9FF; */
+    color: #0b3186;
+    width: 100%;
+  }
+  .tableData table tbody tr td{
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+  } 
+  
+  /* .is-disabled{
+    background: silver !important;
+    border: 2px solid silver !important;
+  } */
+  
+  
+  .tableData table tbody tr .table-action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+  }
+  .tableData table tbody tr .table-action i{
+    font-size: 16px;
+  }
+  .tableData table tbody tr .table-action button{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px; 
+    font-size: 13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+  }
+  
+  
+  .tableData table tbody tr .table-action button:nth-child(1){
+    /* background: green; */
+    color: green;
+  }
+  .tableData table tbody tr .table-action button:nth-child(2){
+    color: red;
+  }
+  
+  .tableData table tbody tr .table-action button:nth-child(1):hover{
+    background: rgba(0, 128, 0, 0.815);
+    box-shadow: 0px 0px 7px green;
+    color: white;
+  }
+  .tableData table tbody tr .table-action button:nth-child(2):hover{
+    background: rgba(255, 0, 0, 0.838);
+    box-shadow: 0px 0px 7px red;
+    color: white;
+  }
